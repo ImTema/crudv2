@@ -1,0 +1,7 @@
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/service/impl/BookServiceImpl.java
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/service/Serviceable.java
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/persistence/HibernateUtil.java
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/model/Book.java
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/dao/impl/BookDaoImpl.java
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/dao/Daoable.java
+/home/hetema/IdeaProjects/crudv2/src/main/java/com/javarush/controller/BookController.java

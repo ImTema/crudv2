@@ -1,0 +1,7 @@
+com/javarush/dao/impl/BookDaoImpl.class
+com/javarush/model/Book.class
+com/javarush/dao/Daoable.class
+com/javarush/controller/BookController.class
+com/javarush/service/Serviceable.class
+com/javarush/service/impl/BookServiceImpl.class
+com/javarush/persistence/HibernateUtil.class
