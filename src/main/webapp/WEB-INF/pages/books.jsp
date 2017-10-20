@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ include file="/WEB-INF/pages/includes.jsp"%>
-
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/books.css">
 <html>
 <head>
 	<title>Bookshelf</title>
@@ -57,6 +57,7 @@
 							<input type="submit" name="action" value="Delete" />
 						</c:if>
 						<input type="submit" name="action" value="Clear" />
+						<input type="hidden" name="search_field" value="${searchField}"/>
 					</td>
 				</tr>
 			</table>
@@ -68,6 +69,7 @@
 		<form action="/book.do/0" method="POST">
 			<input type="submit" name="action" value="Find" />
 			<input type="text" name="search_field" value="${searchField}"/>
+			<input type="submit" name="action" value="Clear" />
 		</form>
 	</div>
 	<div class="output_form">

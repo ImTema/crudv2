@@ -32,22 +32,18 @@
 		</dependency>
 
 
-		<!-- Hibernate -->
-		<!-- to start need only this -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate-version}</version>
 		</dependency>
 
-		<!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate-version}</version>
 		</dependency>
 
-		<!-- optional -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-osgi</artifactId>
@@ -78,7 +74,6 @@
 			<artifactId>hibernate-ehcache</artifactId>
 			<version>${hibernate-version}</version>
 		</dependency>
-		<!--END Hibernate -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -86,7 +81,6 @@
 			<version>${javax.servlet-version}</version>
 		</dependency>
 
-		<!--springframework-->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>

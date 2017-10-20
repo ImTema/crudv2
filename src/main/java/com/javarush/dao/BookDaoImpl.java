@@ -65,7 +65,7 @@ public class BookDaoImpl implements Daoable<Book> {
 	public Query search(String param) {
 		String newParam = "%"+param+"%";
 		Query q = session.getCurrentSession().createQuery("FROM Book WHERE title like :param " +
-				"or description like '%55%' " +
+				"or description like :param " +
 				"or author like :param " +
 				"or isbn like :param")
 				.setParameter("param", newParam);
