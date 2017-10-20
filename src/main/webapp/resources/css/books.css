@@ -1,0 +1,129 @@
+body{
+	width:100%;
+}
+.leftbody{
+	position:relative;
+	width:20%;
+}
+.rightbody{
+position:absolute;
+top:10px;
+margin-right:25px;
+	right:0px;
+width:75%;
+}
+.edit_form input[type=submit]{
+	font-size:16px;
+	padding:3px;
+	width:100px;
+	border:0px;
+	background: #bebebe;
+}
+.hover input[type=submit]:hover{
+background: #f6f6f6;
+	cursor: pointer;
+}
+.edit_form{
+position:relative;
+}
+.edit_form table{
+font-size:15px;
+}
+.edit_form tr,td{
+padding:10px;
+}
+.edit_form tr td:first-child{
+	text-align: left;
+	font-weight:bold;
+	border-left: 0;
+}
+.edit_form input {
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid;
+}
+.edit_form input[type=submit] {
+font-size:16px;
+padding:3px;
+width:100px;
+border:0;
+background: #bebebe;
+margin:5px;
+}
+.search_form form{
+  width: 100%;
+  padding-bottom:20px;
+}
+.search_form input[type=submit]{
+font-size:16px;
+padding:3px;
+width:100px;
+border:0px;
+background: #bebebe;
+}
+.search_form input[type=text]{
+padding:5px;
+border: none;
+border-radius: 0;
+border-bottom: 1px solid;
+background: url(search-icon.png) no-repeat scroll 4px 4px;
+padding-left:23px;
+width:300px;
+}
+
+.simple-little-table {
+	width:100%;
+	font-size:15px;
+	border-right:2px solid;
+}
+ 
+.simple-little-table th {
+	font-weight:bold;
+	padding:6px;
+	border-top:2px solid;
+	border-bottom:2px solid;
+	background: #bebebe;
+}
+.simple-little-table th:last-child td{
+	border-bottom:2px solid;
+}
+.simple-little-table tr{
+	text-align: center;
+	border-right:2px solid;
+}
+.simple-little-table tr td:first-child{
+	text-align: center;
+	border-left: 0;
+}
+.simple-little-table tr td {
+	padding:9px;
+	border-bottom:1px solid;
+	border-right:1px solid;
+}
+.simple-little-table tr:nth-child(even) td{
+	background: #f6f6f6;
+}
+.simple-little-table tr:last-child td{
+	border-bottom:2px solid;
+}
+.simple-little-table input[type=submit]{
+	width:100%;
+	height:100%;
+	font-size:16px;
+	padding:3px;
+	border:0px;
+	background: #bebebe;
+	margin:0;
+}
+
+.paging input[type=submit]{
+margin:2px;
+margin-top: 4px;
+padding:8px;
+border:0px;
+background: #bebebe;
+}
+.paging input[type=submit].selected{
+background:0;
+border:1px solid;
+}

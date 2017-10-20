@@ -1,8 +1,11 @@
 package com.javarush.model;
 
+import org.hibernate.annotations.Proxy;
+
 import javax.persistence.*;
 
 @Entity
+@Proxy(lazy = false)
 @Table(name = "books", schema = "test")
 public class Book {
     private int id;
@@ -10,8 +13,8 @@ public class Book {
     private String description;
     private String author;
     private String isbn;
-    private Integer printYear;
-    private Byte isReadAlready;
+    private int printYear;
+    private byte isReadAlready;
 
     @Id
     @Column(name = "id")
@@ -65,21 +68,21 @@ public class Book {
 
     @Basic
     @Column(name = "printYear")
-    public Integer getPrintYear() {
+    public int getPrintYear() {
         return printYear;
     }
 
-    public void setPrintYear(Integer printYear) {
+    public void setPrintYear(int printYear) {
         this.printYear = printYear;
     }
 
     @Basic
     @Column(name = "isReadAlready")
-    public Byte getIsReadAlready() {
+    public byte getIsReadAlready() {
         return isReadAlready;
     }
 
-    public void setIsReadAlready(Byte isReadAlready) {
+    public void setIsReadAlready(byte isReadAlready) {
         this.isReadAlready = isReadAlready;
     }
 
@@ -88,16 +91,15 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Book that = (Book) o;
+        Book book = (Book) o;
 
-        if (id != that.id) return false;
-        if (title != null ? !title.equals(that.title) : that.title != null) return false;
-        if (description != null ? !description.equals(that.description) : that.description != null) return false;
-        if (author != null ? !author.equals(that.author) : that.author != null) return false;
-        if (isbn != null ? !isbn.equals(that.isbn) : that.isbn != null) return false;
-        if (printYear != null ? !printYear.equals(that.printYear) : that.printYear != null) return false;
-        if (isReadAlready != null ? !isReadAlready.equals(that.isReadAlready) : that.isReadAlready != null)
-            return false;
+        if (id != book.id) return false;
+        if (printYear != book.printYear) return false;
+        if (isReadAlready != book.isReadAlready) return false;
+        if (title != null ? !title.equals(book.title) : book.title != null) return false;
+        if (description != null ? !description.equals(book.description) : book.description != null) return false;
+        if (author != null ? !author.equals(book.author) : book.author != null) return false;
+        if (isbn != null ? !isbn.equals(book.isbn) : book.isbn != null) return false;
 
         return true;
     }
@@ -109,8 +111,8 @@ public class Book {
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + (author != null ? author.hashCode() : 0);
         result = 31 * result + (isbn != null ? isbn.hashCode() : 0);
-        result = 31 * result + (printYear != null ? printYear.hashCode() : 0);
-        result = 31 * result + (isReadAlready != null ? isReadAlready.hashCode() : 0);
+        result = 31 * result + printYear;
+        result = 31 * result + (int) isReadAlready;
         return result;
     }
 }
